@@ -97,7 +97,7 @@ def core(user_id=None):
 
     for i, msg in enumerate(user_data['items']):
         if "attachments" in msg:
-            print('\nDialog {} from {}'.format(i, len(user_data['items'])))
+            print('\nMessage {} from {}'.format(i, len(user_data['items'])))
             for attt in msg['attachments']:
                 save_attachment(attt, media_directory)
 
